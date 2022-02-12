@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.Menu">
+   <children>
+      <ImageView fx:id="background" fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="snow" fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="load" fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="cont" layoutX="880.0" layoutY="146.0" mnemonicParsing="false" onAction="#onCont" prefHeight="100.0" prefWidth="400.0" text="Button" />
+      <Button fx:id="newGame" layoutX="880.0" layoutY="321.0" mnemonicParsing="false" onAction="#toNewGame" prefHeight="100.0" prefWidth="400.0" text="Button" />
+      <Button fx:id="exit" layoutX="880.0" layoutY="488.0" mnemonicParsing="false" onAction="#toExited" prefHeight="100.0" prefWidth="400.0" text="Button" />
+   </children>
+</AnchorPane>

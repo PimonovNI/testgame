@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane fx:id="ancher" prefHeight="720.0" prefWidth="1280.0" stylesheets="@css/styleUpCard.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.interfaceForFloby.ControllerInvertar">
+   <children>
+      <ImageView fx:id="imgBackground" fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../snowBackgroundLVL1.png" />
+         </image>
+      </ImageView>
+      <GridPane fx:id="gridCollection" layoutX="100.0" layoutY="180.0" prefHeight="150.0" prefWidth="400.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+      </GridPane>
+      <ImageView fx:id="backgroundGridMainPart" fitHeight="420.0" fitWidth="420.0" layoutX="90.0" layoutY="250.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../../../img/inventar/system/backgroundGridMainPart.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="bookmark" layoutX="21.0" layoutY="160.0" prefHeight="90.0" prefWidth="74.0">
+         <children>
+            <ImageView fitHeight="90.0" fitWidth="74.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../../../img/inventar/system/bookmarkForInventar.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="12.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </AnchorPane>
+      <GridPane fx:id="grid" alignment="CENTER" layoutX="100.0" layoutY="260.0" prefHeight="400.0" prefWidth="400.0">
+        <columnConstraints>
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+      </GridPane>
+      <ImageView fx:id="backgroundPersMainPart" fitHeight="600.0" fitWidth="500.0" layoutX="680.0" layoutY="60.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../../../img/inventar/system/backgroundGridPersPart.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="butLeft" layoutX="21.0" layoutY="382.0" mnemonicParsing="false" onAction="#left" opacity="0.0" text="Button" visible="false" />
+      <Button fx:id="butRight" layoutX="532.0" layoutY="458.0" mnemonicParsing="false" onAction="#right" opacity="0.0" text="Button" visible="false" />
+      <AnchorPane fx:id="pants" layoutX="716.0" layoutY="327.0" prefHeight="100.0" prefWidth="100.0" />
+      <AnchorPane fx:id="shoes" layoutX="765.0" layoutY="513.0" prefHeight="100.0" prefWidth="100.0" />
+      <AnchorPane fx:id="jacket" layoutX="1049.0" layoutY="140.0" prefHeight="100.0" prefWidth="100.0" />
+      <AnchorPane fx:id="cloak" layoutX="1049.0" layoutY="323.0" prefHeight="100.0" prefWidth="100.0" />
+      <AnchorPane fx:id="sword" layoutX="716.0" layoutY="140.0" prefHeight="100.0" prefWidth="100.0" />
+      <Label fx:id="labWeight" alignment="CENTER" layoutX="896.0" layoutY="563.0" prefHeight="31.0" prefWidth="194.0" text="Weight" />
+      <Label fx:id="labArmor" alignment="CENTER" layoutX="978.0" layoutY="531.0" prefHeight="31.0" prefWidth="194.0" text="Armor" />
+      <Label fx:id="labFrozen" alignment="CENTER" layoutX="978.0" layoutY="596.0" prefHeight="31.0" prefWidth="194.0" text="Frooze" />
+      <Label fx:id="labDamage" alignment="CENTER" layoutX="896.0" layoutY="497.0" prefHeight="31.0" prefWidth="194.0" text="Damage" />
+      <ProgressBar fx:id="progressWaitENTER" layoutX="140.0" layoutY="87.0" opacity="0.0" prefWidth="100.0" progress="0.0" />
+      <ProgressBar fx:id="progressWaitQ" layoutX="140.0" layoutY="114.0" opacity="0.0" prefWidth="100.0" progress="0.0" />
+      <ImageView fx:id="imagePers" fitHeight="150.0" fitWidth="200.0" layoutX="830.0" layoutY="210.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane fx:id="mainAnc" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.flobyLVL.snowYar.ControllerLVL0">
+   <children>
+      <ImageView fx:id="backgroundImage" fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../../../image/sceneVeiw/SnowYar/background/1.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="i2" fitHeight="720.0" fitWidth="2100.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../image/sceneVeiw/SnowYar/completeScene/0.2.png" />
+         </image>
+      </ImageView>
+      <Rectangle fx:id="ground1" arcHeight="5.0" arcWidth="5.0" fill="RED" height="100.0" layoutY="620.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="2000.0" />
+      <Rectangle fx:id="ground2" arcHeight="5.0" arcWidth="5.0" fill="RED" height="50.0" layoutX="419.0" layoutY="571.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1000.0" />
+      <Rectangle fx:id="ground3" arcHeight="5.0" arcWidth="5.0" fill="RED" height="50.0" layoutX="720.0" layoutY="521.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="500.0" />
+      <Rectangle fx:id="ground4" arcHeight="5.0" arcWidth="5.0" fill="RED" height="1000.0" layoutX="1920.0" layoutY="-100.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+      <Rectangle fx:id="ground5" arcHeight="5.0" arcWidth="5.0" fill="RED" height="739.0" layoutX="-25.0" layoutY="-9.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="87.0" />
+      <Rectangle fx:id="indicatorRegionForCameraTopLeft" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="50.0" layoutX="26.0" layoutY="8.0" opacity="0.0" stroke="BLACK" strokeType="INSIDE" width="38.0" />
+      <Rectangle fx:id="indicatorRegionForCameraBottomRight" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="44.0" layoutX="1960.0" layoutY="641.0" opacity="0.0" stroke="BLACK" strokeType="INSIDE" width="38.0" />
+      <Rectangle fx:id="portal1" arcHeight="5.0" arcWidth="5.0" fill="#00ff62" height="288.0" layoutX="19.0" layoutY="333.0" opacity="0.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="58.0" />
+      <ImageView fx:id="crow1" fitHeight="56.0" fitWidth="49.0" layoutX="539.0" layoutY="437.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../crow/start.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="crow2" fitHeight="56.0" fitWidth="49.0" layoutX="1085.0" layoutY="202.0" pickOnBounds="true" preserveRatio="true" scaleX="-1.0">
+         <image>
+            <Image url="@../../../../../crow/start.png" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="pers" layoutX="1800.0" layoutY="560.0" prefHeight="50.0" prefWidth="50.0">
+         <children>
+            <Label fx:id="labDirectionIndicator" layoutX="11.0" layoutY="17.0" text="0" />
+            <ImageView fx:id="persAnimation" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="imgIconForImageFreezingEffect" fitHeight="10.0" fitWidth="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../image/iconForFreezindEfect.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+      <ImageView fx:id="i1" fitHeight="720.0" fitWidth="2100.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../image/sceneVeiw/SnowYar/completeScene/0.1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgDec1" fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true">
+      </ImageView>
+      <ImageView fx:id="imgDec2" fitHeight="720.0" fitWidth="1280.0" layoutX="1280.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+      </ImageView>
+      <ProgressBar fx:id="experiences" layoutX="39.0" layoutY="116.0" opacity="0.0" prefHeight="23.0" prefWidth="44.0" progress="0.0" style="-fx-accent: #f5ff88;" />
+      <ProgressBar fx:id="stamina" layoutX="108.0" layoutY="68.0" prefHeight="20.0" prefWidth="111.0" progress="0.58" style="-fx-accent: #f0ae00; -fx-control-inner-background: #2b2b2b;" />
+      <ProgressBar fx:id="health" layoutX="108.0" layoutY="52.0" prefHeight="20.0" prefWidth="186.0" progress="0.76" style="-fx-accent: #e52b50; -fx-control-inner-background: #2b2b2b;" />
+      <ImageView fx:id="imageInfoBar" fitHeight="102.0" fitWidth="288.0" layoutX="20.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../image/interface/bar2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="loadScreen" fitHeight="720.0" fitWidth="1280.0" opacity="0.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

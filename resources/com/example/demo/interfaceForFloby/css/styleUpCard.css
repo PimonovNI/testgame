@@ -1,0 +1,44 @@
+@font-face {
+    src: url('ofont.ru_Tolkien.ttf');
+}
+
+@font-face {
+    src: url('reb.ttf');
+}
+
+#labelCountCraft{
+    -fx-font-family: 'French Script MT';
+    -fx-font-size: 25;
+    -fx-font-weight: 700;
+}
+
+#labelInfoCraftD{
+    -fx-font-family: 'TolkienCyr';
+    -fx-font-size: 15;
+}
+
+#labelNameInfo, #labelDescription, #labelInfoCraft, #labelNameResCraft, #labelResourceInfo, #labelLVLCraft, #labelNameCraft{
+    -fx-font-family: 'TolkienCyr';
+    -fx-font-size: 25;
+}
+
+#labelArticle{
+    -fx-font-family: 'Ritalin ExtraBold';
+    -fx-font-size: 15;
+}
+
+#labWeight, #labArmor, #labFrozen, #labDamage{
+    -fx-font-family: 'Ritalin ExtraBold';
+    -fx-font-size: 20;
+}
+
+#labelBackGroundCountInventarItems{
+    -fx-font-family: 'French Script MT';
+    -fx-font-size: 45;
+    -fx-font-weight: 700;
+}
+
+#labNameBlockInfo{
+    -fx-font-family: 'Ritalin ExtraBold';
+    -fx-font-size: 30;
+}
